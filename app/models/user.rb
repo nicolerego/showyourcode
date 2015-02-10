@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
 	has_many :reviews
 	has_many :projects, through: :reviews
 
-	has_many :owned_products, class_name: "Product", foreign_key: :owner_id
+	has_many :owned_projects, class_name: "Project", foreign_key: :owner_id
 
 end

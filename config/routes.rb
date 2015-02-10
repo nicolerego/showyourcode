@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
-  root "projects#show"
+  root "projects#index"
 
-  resources :projects
-  resources :users, only: [:new, :create]
+  resources :projects do
+    resources :reviews
+  end 
+
+  resources :users, only: [:new, :create, :show]
   resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
