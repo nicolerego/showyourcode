@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  root "projects#index"
+  get 'home/index'
+
+  root 'home#index'
+
+  # root "projects#index"
 
   resources :projects do
     resources :reviews

@@ -1,0 +1,16 @@
+<%= render "shared/header" %>
+<p>This is the application homepage<p>
+
+<h2>Recently Added Projects</h2>
+
+<ul>
+	<% @projects.each do |project| %>
+<li>
+	<%= link_to project.name, project_path(project) %></br> 
+	<%= project.description %> </br>
+</li>
+	<% end %>
+</ul>
+
+ <%= link_to "View all Projects",  projects_url %>
+ <%= link_to "Add a New Project",  new_project_url %> 

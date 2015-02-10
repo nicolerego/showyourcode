@@ -19,7 +19,7 @@ class ReviewsController < ApplicationController
   	@review.user = current_user
 
   	if @review.save
-  		redirect_to projects_path(@project), notice: "Comment was successfully added"
+  		redirect_to project_path(@project), notice: "Comment was successfully added"
   	else
   		render 'projects/show'
   	end 
