@@ -1,0 +1,12 @@
+<%= render "/shared/header" %>
+<h2>All Projectss</h2>
+<%= link_to "Add a new Project",  new_project_url %>
+<ul>
+	<% @projects.each do |project| %>
+<li>
+	<%= link_to project.name, project_path(project) %></br> 
+	<%= project.description %> </br>
+	<%= project.link %>
+</li>
+	<% end %>
+</ul>

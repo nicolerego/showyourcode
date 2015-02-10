@@ -1,0 +1,23 @@
+<%= render "/shared/header" %>
+
+<%= link_to "Back to All Projects", projects_url %>
+
+<% if @project.owner == current_user %>
+| <%= link_to "Edit", edit_project_path(@project) %>
+| <%= link_to "Delete", @project, method: :delete, data: 
+	{confirm: "Are you sure you want to delete this project?"}  %>
+<% end %>
+
+<h3><%= @project.name %></h3>
+<p>Name: <%= @product.name %> </br> 
+	Description: <%= @project.description %> </br>
+	Link: <%= @project.link %> </br>
+	Created by: <%= @product.owner.name %></p> 
+
+
+<% if current_user %>
+	<h4>Write a New Review</h4>
+	
+<% else %>
+	<p>Please <%= link_to "log in", new_session_path %> to add a review.</p>
+<% end %>
