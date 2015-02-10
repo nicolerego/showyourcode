@@ -1,3 +1,3 @@
 class Project < ActiveRecord::Base
-	validates :name, :description, :link, presense: true
+	validates :name, :description, :link, presence: true
 end
