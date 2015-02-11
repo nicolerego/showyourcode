@@ -13,3 +13,322 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	margin:0 auto;
+}
+
+header.home {
+	background-color: #acf042;
+	padding-top:150px;
+	padding-bottom:150px;
+	text-align: center;
+}
+
+header.home h3 {
+	font-weight: 200; 
+	color:#fff;
+}
+
+header {
+	padding-top:50px;
+	padding-bottom:50px;
+	text-align: center;
+}
+
+header h3.pages { 
+	font-weight: 200; 
+	margin-top: -20px;
+}
+
+h1 a {
+	font-weight:bold; 
+	font-size:30pt;
+	color:#fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+h1 {
+	border:solid 1px #fff;
+	width:70%;
+	max-width:600px;
+	margin: 0 auto;
+	text-align: center;
+	padding:15px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+h1 img {max-width:500px;}
+
+.app_description {
+	height:100%;
+	overflow: auto;
+	padding-left:60px;
+	padding-right:60px;
+	max-width:600px;
+	margin: 0 auto;
+	margin-top:130px;
+	margin-bottom: 100px;
+	text-align: center;
+	font-size: 160%;
+}
+
+ul li {list-style-type: none;}
+
+ul.projects {
+	height:100%;
+	overflow: auto;
+	width:80%;
+	max-width: 775px;
+	margin:0 auto;
+	padding-left: 0px;
+	margin-bottom: 100px;
+	margin-top:50px;
+}
+
+ul.projects li{
+	width:245px;
+	display: block;
+	float:left;
+	list-style-type: none;
+	margin: 0 auto;
+	margin-right:10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+ul.projects li a{
+	text-decoration: none;
+	padding-bottom:20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#222;
+}
+
+ul.projects li a::before,
+ul.projects li a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+ul.projects li a::before {
+	margin-right: 5px;
+	content: '[';
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	transform: translateX(10px);
+}
+ul.projects li a::after {
+	margin-left: 5px;
+	content: ']';
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+ul.projects li a:hover::before,
+ul.projects li a:hover::after,
+ul.pprojects li a:focus::before,
+ul.projects li a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.footer {
+	border-top: solid 1px #ccc;
+	padding-top:100px;
+	text-align: center;
+	width:80%;
+	margin:0 auto;
+	margin-top: 100px !important;
+	padding-bottom: 0px;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size:120%;
+	font-weight: 300;
+	border: solid 1px #000;
+	width:160px;
+	padding:10px;
+}
+
+.footer .loginSignup{
+	width:300px;
+	margin:0 auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -30px;
+}
+
+.loginSignup a {
+	text-decoration: none;
+	color:#222;
+}
+.footer .getStarted {
+	width:200px;
+	margin:0 auto;
+	display: inline-block;
+	margin-top:-200px !important;
+	margin-top: 0px;
+}
+
+.flatButton {
+  position: relative;
+  vertical-align: top;
+  width:180px;
+  height: 30px;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f1b601; 
+  border: 0;
+  border-bottom: 2px solid #d5a102;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #d5a102;
+  box-shadow: inset 0 -2px #d5a102;
+  margin: 0 auto;
+}
+
+.flatButton:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.flatButton a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.madeWith {
+	font-size: 11pt;
+	margin-top:80px;
+}
+
+.madeWith img {
+	vertical-align: text-top;
+	margin-top: 1px;
+	height:18px;
+}
+
+.formPage {
+	width:80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.formPage h3 {
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+
+.formPage .flatButton{
+	padding-top:0px;
+	margin-top:20px;
+	font-weight: 100;
+}
+
+.formPage p a {
+	text-decoration: none;
+	color: grey;
+}
+
+.formPage label {
+	font-size: 11pt;
+}
+
+input, textarea {
+	width:50%;
+	margin-bottom:20px;
+	border:solid 1px #ccc;
+}
+
+#alert, #notice {
+	margin-top:30px;
+	font-size:120%;
+	text-align: center;
+}
+
+.error_messages li {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left:-20px;
+}
+
+.projectPage {
+	width:80%;
+	margin: 0 auto;
+	height:100%;
+	overflow:auto;
+}
+
+.projectPage h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	height:80px;
+	float:left; 
+	margin-right:20px;
+}
+
+.projectPage a {
+	text-decoration: none;
+	color:#222;
+	text-transform: uppercase;
+}
+
+.project { 
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.reviews {
+	height:100%; 
+	overflow:auto;
+	clear: both;
+	float:none;
+}
+
+.reviews img {
+	height:25px;
+	vertical-align: text-top;
+	padding-bottom: 70px;
+	float:left; 
+	margin-right:10px;}
+
+h5 { font-weight: 100; }
+
+.projectPage .formPage {
+	text-align: left;
+	width:100%;
+}
+
+.projectPage .formPage textarea {
+	width:99%; 
+	height:50px; 
+	margin-top:10px;
+}
+
+.projectPage a:hover {color:#ccc;}
+.projectPage .formPage .flatButton {}
+
+.reviewsTitle {
+	margin-bottom:-20px;
+	width:100%;
+	overflow-y:hidden;
+}

@@ -10,6 +10,8 @@ class Project < ActiveRecord::Base
 	validates :name, presence: true
 	validates :description, :name, presence: true
 
+	scope :recently_added_projects, -> { order(created_at: :DESC) }
+
 	private
 	def format_name
 		self.name = name.titleize 

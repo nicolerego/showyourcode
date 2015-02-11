@@ -1,16 +1,23 @@
-<%= render "shared/header" %>
-<p>This is the application homepage<p>
+<%= render "shared/headerHome" %>
+<div class="app_description">
+	
+	<p>First things, first. </br>Write some really awesome code. </br>
+		Then share it with your fellow developers and beer enthusiasts for review!
+	</p>
+</div>
 
-<h2>Recently Added Projects</h2>
 
-<ul>
+<ul class="projects">
 	<% @projects.each do |project| %>
 <li>
-	<%= link_to project.name, project_path(project) %></br> 
+	<%= link_to project.name, project_path(project) %></br>
 	<%= project.description %> </br>
 </li>
 	<% end %>
 </ul>
 
+<div class="flatButton">
  <%= link_to "View all Projects",  projects_url %>
- <%= link_to "Add a New Project",  new_project_url %> 
+</div>
+
+<%= render "shared/footer"%>

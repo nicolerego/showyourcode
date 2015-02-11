@@ -1,4 +1,5 @@
-<h4>New Review</h4>
+<section class="formPage">
+<h5>WRITE A NEW COMMENT</h5>
 
   <%= form_for([@project, @review]) do |f| %>
     <% if @review.errors.any? %>
@@ -18,6 +19,7 @@
       <%= f.text_area :comment %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit class: "flatButton"%>
     </div>
   <% end %>
+</section>

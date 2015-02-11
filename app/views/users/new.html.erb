@@ -1,10 +1,11 @@
 <%= render "/shared/header"%>
-<h1>Sign Up</h1>
+<section class="formPage">
+<h3>SIGN UP</h3>
 
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
     <div class="error_messages">
-      <h2>Form is invalid</h2>
+      <h3>Whoops! Form is invalid because of the following:</h3>
       <ul>
         <% for message in @user.errors.full_messages %>
           <li><%= message %></li>
@@ -28,5 +29,8 @@
     <%= f.label :password_confirmation %><br/>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div class="actions"><%= f.submit %></div>
+  <div class="actions"><%= f.submit class: "flatButton" %></div>
 <% end %>
+<section class="formPage">
+
+  <%= render "/shared/footer"%>

@@ -1,10 +1,10 @@
 <% @project.reviews.newest_first.each do |review| %>
-	
+	<%= image_tag ("beer.jpg") %>
 	<p>
 		<%= review.comment %>
 		</br>
 		<% if review.user != nil %>
-			<em> by <%= link_to review.user.name, user_path(review.user) %></em>
+			<em> by <%= review.user.name %></em>
 			Added on: <%= review.created_at %></br></br>
 		
 			<% if review.user_id == current_user.id %>
@@ -14,3 +14,5 @@
 		<% end %>
 	</p>
 <% end %>
+
+<!-- link_to review.user.name, user_path(review.user) -->

@@ -1,5 +1,6 @@
 <%= render "/shared/header"%>
-<h1>Log in</h1>
+<section class="formPage">
+<h3>LOG IN</h3>
 
 <%= form_tag sessions_path do %>
   <div class="field">
@@ -10,5 +11,7 @@
     <%= label_tag :password %><br/>
     <%= password_field_tag :password %>
   </div>
-  <div class="actions"><%= submit_tag "Log in" %></div>
+  <div class="actions"><%= submit_tag "Log in", class: "flatButton" %></div>
 <% end %>
+</section>
+<%= render "/shared/footer"%>
