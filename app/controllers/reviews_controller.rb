@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
-   before_filter :ensure_logged_in, only: [:create, :destroy, :edit, :update]
-    before_filter :load_project
+  before_filter :ensure_logged_in, only: [:create, :destroy, :edit, :update]
+  before_filter :load_project
 
   def index
   end

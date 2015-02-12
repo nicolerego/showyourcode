@@ -307,7 +307,7 @@ input, textarea {
 .reviews img {
 	height:25px;
 	vertical-align: text-top;
-	padding-bottom: 70px;
+	margin-bottom: 0px;
 	float:left; 
 	margin-right:10px;}
 
