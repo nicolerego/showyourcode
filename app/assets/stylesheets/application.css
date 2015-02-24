@@ -23,8 +23,10 @@ body {
 }
 
 header.home {
-	background-color: #acf042;
-	padding-top:150px;
+	/*background-color: #acf042;*/
+	background: url("backGround.jpg");
+	background-size: cover;
+	padding-top:80px;
 	padding-bottom:150px;
 	text-align: center;
 }
@@ -34,12 +36,37 @@ header.home h3 {
 	color:#fff;
 }
 
-header {
-	padding-top:50px;
-	padding-bottom:50px;
+.inApp {
+	
+	height:100%;
+	overflow: auto;
 	text-align: center;
+	padding-bottom:40px;
 }
 
+.inApp img {
+	width:400px;
+
+}
+
+nav {
+	height:100%;
+	overflow: auto;
+	width:410px;
+	margin: 0 auto;
+	margin-top: -30px;
+}
+
+.inApp ul li {
+	float:left;
+	margin-right:20px;
+}
+
+.inApp a {
+	text-decoration: none;
+	/*color:#f1b601;*/
+	text-transform: uppercase;
+}
 header h3.pages { 
 	font-weight: 200; 
 	margin-top: -20px;
@@ -54,8 +81,8 @@ h1 a {
 }
 
 h1 {
-	border:solid 1px #fff;
-	width:70%;
+	/*border:solid 1px #fff;*/
+	width:80%;
 	max-width:600px;
 	margin: 0 auto;
 	text-align: center;
@@ -64,7 +91,16 @@ h1 {
 	text-transform: uppercase;
 }
 
-h1 img {max-width:500px;}
+h1 img {max-width:600px;}
+
+.loginSignup a {
+	padding:5px 7px;
+	margin-right:5px;
+	background-color: orange;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
 
 .app_description {
 	height:100%;
@@ -74,7 +110,7 @@ h1 img {max-width:500px;}
 	max-width:600px;
 	margin: 0 auto;
 	margin-top:130px;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	text-align: center;
 	font-size: 160%;
 }
@@ -145,14 +181,39 @@ ul.projects li a:focus::after {
 	transform: translateX(0px);
 }
 
-.footer {
-	border-top: solid 1px #ccc;
-	padding-top:100px;
-	text-align: center;
-	width:80%;
+
+.homeRecent {
+	font-size: 16pt;
+	margin-bottom: 0px;
+}
+
+.recentProjects {
+	padding-top: 50px;
+	padding-bottom: 80px;
+	background-color: #FCFCFC;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #fff;
 	margin:0 auto;
-	margin-top: 100px !important;
-	padding-bottom: 0px;
+	margin-top:-60px;
+
+}
+
+.footer {
+	text-align: center;
+	width:100%;
+	margin:0 auto;
+	margin-top:0px;
+	height: 5px;
+	height: 100%;
+	overflow: auto;
+	background-color: #270346;
+	color: #fff;
 }
 
 h4 {
@@ -164,25 +225,21 @@ h4 {
 	padding:10px;
 }
 
-.footer .loginSignup{
+/*.footer .loginSignup{
 	width:300px;
 	margin:0 auto;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: -30px;
-}
-
-.loginSignup a {
-	text-decoration: none;
-	color:#222;
-}
+}*/
+/*
 .footer .getStarted {
 	width:200px;
 	margin:0 auto;
 	display: inline-block;
 	margin-top:-200px !important;
 	margin-top: 0px;
-}
+}*/
 
 .flatButton {
   position: relative;
@@ -218,20 +275,22 @@ h4 {
 }
 
 .madeWith {
-	font-size: 11pt;
-	margin-top:80px;
+	font-size: 9pt;
+	
 }
 
 .madeWith img {
 	vertical-align: text-top;
 	margin-top: 1px;
-	height:18px;
+	height:15px;
+	margin-left: 3px;
 }
 
 .formPage {
 	width:80%;
 	margin: 0 auto;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 .formPage h3 {
@@ -277,6 +336,7 @@ input, textarea {
 	margin: 0 auto;
 	height:100%;
 	overflow:auto;
+	margin-bottom: 100px;
 }
 
 .projectPage h3 {
