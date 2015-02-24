@@ -13,14 +13,14 @@ Project.create!(
 )
 
 Project.create!(
-	:name => "Project One",
+	:name => "Project Two",
 	:description => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 	:link => "wwww.example.com", 
 	:owner_id => 1
 )
 
 Project.create!(
-	:name => "Project One",
+	:name => "Project Three",
 	:description => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 	:link => "wwww.example.com", 
 	:owner_id => 1
